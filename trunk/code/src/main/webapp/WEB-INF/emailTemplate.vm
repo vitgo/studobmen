@@ -1,0 +1,12 @@
+<html>
+<body>
+<p>
+	Информация от <span style="font-size:12px;"><cite>&nbsp;<a href="http://conspect.j.rsnx.ru/conspects/">Conspects.ru</a></cite></span></p>
+<p>
+	<span style="font-size:16px;">Вы обменяли &quot;${price}&quot; по ${discipline} на &quot;${type}&quot; (${description}).</span></p>
+<p>
+	Чтобы получить &quot;${type}&quot; свяжитесь с хозяином по адресу: <a href="mailto:${email}?subject=%D0%A8%D0%BF%D0%BE%D1%80%D1%8B&amp;body=%D0%AF%20%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%20%D0%B7%D0%B0%20%D1%88%D0%BF%D0%BE%D1%80%D1%8B%20%D0%BE%D1%82%D0%B4%D0%B0%D1%82%D1%8C%20%D0%BF%D0%B8%D0%B2%D0%BE.%20%D0%9A%D0%BE%D0%B3%D0%B4%D0%B0%20%D0%BC%D1%8B%20%D1%81%D0%BC%D0%BE%D0%B6%D0%B5%D0%BC%20%D1%8D%D1%82%D0%BE%20%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%3F">mail@mail.ru</a></p>
+<p>
+	То, что вы получите имеет отношение к: ${teacher}, ${university}.</p>
+</body>
+</html>

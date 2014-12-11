@@ -1,0 +1,64 @@
+.non-margined {
+	margin: 0;
+}
+.hide {
+	display: none;
+}
+.ico {
+	height: 16px;
+	width: 16px;
+}
+.font-light {
+	color: #ccc;
+}
+.center-text {
+	text-align: center;
+}
+
+.body {
+	margin: 10px 0;
+}
+
+.menu {
+	margin-top: 10px;
+	font-size: 12px;
+	word-wrap: break-word;
+}
+.menu p {
+	margin: 8px 0 0 10px
+}
+.header h1 {
+	font-style: italic;
+	font-size: 24px;
+}
+.header h1 a:hover {
+	text-decoration: none;
+}
+.indexPage .header h1 {
+	text-align: center;
+	margin-top: 15%;
+	font-size: 36px;
+}
+table.indexLayout {
+	width: 100%;
+	vertical-align: middle;
+	text-align: center;
+	margin: 10px 0;
+}
+table caption {
+	font-size: 28px;
+	margin-bottom: 5px;
+}
+table caption small {
+	font-size: 12px;
+}
+input.indexInput {
+	margin: 0 10px 0 0;
+}
+
+#showItemForm .controls {
+	padding-top: 5px;
+}
+.hero-unit p {
+	margin: 10px 0 0 0;
+}

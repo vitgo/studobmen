@@ -1,0 +1,65 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-09-29 00:55:41
+project --topLevelPackage by.conspect
+logging setup --level WARN
+logging setup --level TRACE --package PROJECT
+jpa setup --database MYSQL --provider HIBERNATE 
+entity jpa --class ~.model.Item --testAutomatically 
+field string --fieldName title --sizeMin 1 --sizeMax 2000
+field string --fieldName type --sizeMin 1 --sizeMax 2000 --notNull
+field string --fieldName ei --sizeMin 1 --sizeMax 4000 --notNull
+field string --fieldName teacher --sizeMin 1 --sizeMax 2000 --notNull
+field string --fieldName price --sizeMin 1 --sizeMax 4000 --notNull
+field date --fieldName publishDate --type java.util.Date --dateTimeFormatPattern dd.MM.yyyy
+field string --fieldName status --sizeMin 1 --sizeMax 500 --notNull
+// [failed] entity jpa --class ~.model.User --testAutomatically 
+entity jpa --class ~.model.SystemUser --testAutomatically 
+field string --fieldName login --sizeMin 1 --sizeMax 500 --notNull
+field string --fieldName name --sizeMin 1 --sizeMax 1000 --notNull
+// [failed] field string --fieldName role --sizeMin 1 --sizeMax 300 --notNull
+field string --fieldName userRole --sizeMin 1 --sizeMax 300 --notNull
+field string --fieldName password --sizeMin 1 --sizeMax 200 --notNull
+field boolean --fieldName enabled
+field string --fieldName phone --sizeMax 25
+field string --fieldName email --sizeMax 500
+field string --fieldName skype --sizeMax 500
+field string --fieldName otherContact --sizeMax 4000
+focus --class ~.model.Item
+field reference --fieldName owner --type ~.model.SystemUser --cardinality MANY_TO_ONE
+exit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-09-29 01:29:28
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-09-29 01:36:17
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-09-29 01:37:44
+focus --class ~.model.Item
+finder list --depth 2 --filter discipline,tutor
+finder add --finderName findItemByDisciplineOrTeacher
+finder list --depth 2 --filter discipline
+finder add --finderName findItemByDisciplineLikeOrTeacherLike
+finder add --finderName findItemsByDisciplineLikeOrTeacherLike
+web mvc setup
+web mvc all --package ~.web
+security setup
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-09-29 01:47:11
+exit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-09-29 01:51:47
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-09-29 02:08:49
+repository jpa --interface ~.db.ItemRepository --entity ~.model.Item
+repository jpa --interface ~.db.SystemUserRepository --entity ~.model.SystemUser
+service --interface ~.service.ItemService --entity ~.model.Item
+service --interface ~.service.SystemUserService --entity ~.model.UserService
+focus --class ~.model.Item
+finder add --finderName findItemsByDisciplineLikeOrTeacherLike
+finder add --finderName findItemsByDisciplineLikeOrTeacherLike
+entity jpa --class ~.model.Item --activeRecord false
+finder add --finderName findItemsByDisciplineLikeOrTeacherLike
+entity jpa --class ~.model.Item
+finder add --finderName findItemsByDisciplineLikeOrTeacherLike
+exit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-09-29 03:19:58
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-09-29 09:00:02
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-09-29 09:00:02
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-09-29 11:48:52
+// [failed] web mvc json all
+web mvc json all
+exit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-09-30 01:13:28
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-09-30 01:19:42
